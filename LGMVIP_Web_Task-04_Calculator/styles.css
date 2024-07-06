@@ -1,0 +1,184 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    padding: 20px;
+    background: black;
+    overflow: hidden;
+}
+
+.calculator-screen {
+    width: 75%;
+    height: 50px;
+    border: none;
+    background: rgb(215, 206, 206);
+    text-align: right;
+    font-weight: bolder;
+    margin-top: -20px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: rgb(0, 0, 255);
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+}
+
+.calculator-c button{
+    width: 20%;
+    height: 52px;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-left: 6px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calculator-keys button{
+    height: 60px;
+    width: 90%;
+    font-size: 1.5em;
+    margin-right: 106.5px;
+    margin-left: 5px;
+    border: none;
+    border: 0.5px solid #ddd;
+    border-radius: 5px;
+    background: #4e0a91;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calculator-keys button.operator {
+    background: darkviolet;
+    width: 50%;
+    margin-left: 2px;
+}
+
+.calculator-keys button.equal-sign {
+    background: #ff9f00;
+    grid-column: span 1;
+}
+
+.calculator-c button n.all-clear {
+    background: red;
+}
+
+.calculator-keys button:hover {
+    background-color: #6a0dad;
+}
+
+.calculator-keys button:active {
+    background-color: #4b0082;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .calculator {
+        max-width: 100%;
+    }
+
+    .calculator-screen {
+        height: 60px;
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .calculator-keys button {
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 508px) {
+    .calculator {
+        max-width: 100%;
+    }
+
+    .calculator-screen {
+        height: 60px;
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .calculator-keys button {
+        height: 40px;
+        font-size: 1.2rem;
+        margin-right: 102.5px;
+    }
+}
+@media (max-width: 450px) {
+    .calculator {
+        max-width: 100%;
+    }
+
+    .calculator-screen {
+        height: 60px;
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .calculator-keys button {
+        height: 40px;
+        font-size: 1.2rem;
+        margin-right: 96.5px;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .calculator-screen {
+        height: 50px;
+        width: 70%;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .calculator-keys button {
+        height: 40px;
+        width: 70%;
+        font-size: 1rem;
+        margin-right: 65.5px;
+    }
+}
+@media (max-width: 320px) {
+    .calculator-screen {
+        height: 50px;
+        width: 70%;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .calculator-keys button {
+        height: 40px;
+        width: 70%;
+        font-size: 1rem;
+        margin-right: 35.5px;
+    }
+}
